@@ -2,17 +2,19 @@ import { Devs } from "@utils/constants";
 import definePlugin from "@utils/types";
 
 export default definePlugin({
-    name: "onekob",
-    description: "black car follow mouse (ehehheh)",
+    name: "oneko",
+    description: "cat follow mouse (real)",
     authors: [Devs.Nulled],
 
     start() {
-        fetch("C:/Users/Nulle/Documents/Vencord/src/userplugins/onekob/onekob.js")
+        fetch("https://github.com/Giova02/onekob/blob/main/onekob.js")
             .then(x => x.text())
+            .then(s => s.replace("./oneko.gif", "https://github.com/Giova02/onekob/blob/main/onekob.gif")
+                .replace("(isReducedMotion)", "(false)"))
             .then(eval);
     },
 
     stop() {
-        document.getElementById("onekob")?.remove();
+        document.getElementById("oneko")?.remove();
     }
 });

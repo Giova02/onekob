@@ -13,7 +13,7 @@
     window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
     window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
   
-  if (false) {
+  if (isReducedMotion) {
     return;
   }
 
@@ -93,7 +93,7 @@
     nekoEl.style.height = "32px";
     nekoEl.style.position = "fixed";
     nekoEl.style.pointerEvents = "none";
-    nekoEl.style.backgroundImage = "url('file:///C:/Users/Nulle/Documents/Vencord/src/userplugins/onekob/onekob.gif')";
+    nekoEl.style.backgroundImage = "url('./oneko.gif')";
     nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = `${nekoPosX - 16}px`;
     nekoEl.style.top = `${nekoPosY - 16}px`;
