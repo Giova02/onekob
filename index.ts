@@ -2,8 +2,8 @@ import { Devs } from "@utils/constants";
 import definePlugin from "@utils/types";
 
 export default definePlugin({
-    name: "oneko",
-    description: "cat follow mouse (real)",
+    name: "Black car",
+    description: "black car follow mouse (ehehheh)",
     authors: [Devs.Nulled],
 
     start() {
@@ -15,6 +15,6 @@ export default definePlugin({
     },
 
     stop() {
-        document.getElementById("oneko")?.remove();
+        document.getElementById("onekob")?.remove();
     }
 });
