@@ -7,9 +7,9 @@ export default definePlugin({
     authors: [Devs.Nulled],
 
     start() {
-        fetch("https://github.com/Giova02/onekob/blob/main/onekob.js")
+        fetch("https://raw.githubusercontent.com/Giova02/onekob/refs/heads/main/onekob.js?token=GHSAT0AAAAAAC3P6PVFL27QQCDSEB72HRYWZ2R2A7A")
             .then(x => x.text())
-            .then(s => s.replace("./oneko.gif", "https://github.com/Giova02/onekob/blob/main/onekob.gif")
+            .then(s => s.replace("./oneko.gif", "https://raw.githubusercontent.com/Giova02/onekob/refs/heads/main/onekob.gif")
                 .replace("(isReducedMotion)", "(false)"))
             .then(eval);
     },
