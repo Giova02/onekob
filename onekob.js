@@ -1,5 +1,3 @@
-// onekob.js: https://github.com/adryd325/onekob.js
-
 (function onekob() {
   const nekoEl = document.createElement("div");
 
@@ -8,14 +6,6 @@
 
   let mousePosX = 0;
   let mousePosY = 0;
-
-  const isReducedMotion =
-    window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
-    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
-  
-  if (isReducedMotion) {
-    return;
-  }
 
   let frameCount = 0;
   let idleTime = 0;
@@ -93,7 +83,7 @@
     nekoEl.style.height = "32px";
     nekoEl.style.position = "fixed";
     nekoEl.style.pointerEvents = "none";
-    nekoEl.style.backgroundImage = "url('./oneko.gif')";
+    nekoEl.style.backgroundImage = "url('https://raw.githubusercontent.com/Giova02/onekob/refs/heads/main/onekob.gif')";
     nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = `${nekoPosX - 16}px`;
     nekoEl.style.top = `${nekoPosY - 16}px`;
